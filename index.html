@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/htmx.org@1.9.4"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@600&family=Ubuntu+Mono:wght@400;700&display=swap" rel="stylesheet">
+  </head>
+
+  <body class="bg-gradient-to-b from-neutral-800 from-10% to-neutral-900 to-50% h-screen flex justify-center items-center flex-col text-yellow-100 font-mono">
+    <div class="bg-neutral-900 w-2/3 h-3/4 rounded flex ">
+
+      <aside class="w-1/4 p-4 flex flex-col space-y-4">
+        <div class="mb-8">
+          <h3 class="text-xl">Find me on:</h3>
+          <a class="pl-3 block" href="https://www.linkedin.com/in/jparouca/" target="_blank">linkedin</a>
+          <a class="pl-3 block" href="https://www.github.com/jparouca/" target="_blank">github</a>
+          <a class="pl-3 block" href="https://www.twitter.com/kaxo_ta" target="_blank">twitter</a>
+          <a class="pl-3 block" href="https://www.twitch.tv/takaxo1" target="_blank">twitch</a>
+        </div>
+        <div class="mb-8">
+          <h3 class="text-xl">Development:</h3>
+          <a class="pl-3 block" href="">blog</a>
+          <a hx-get="/projects.html" hx-target="#main-content" class="pl-3 block" href="">latest projects</a>
+        </div>
+        <div class="">
+          <h3 class="text-xl">more</h3>
+          <a class="pl-3 block" href="">linkedin</a>
+          <a class="pl-3 block" href="">linkedin</a>
+        </div>
+      </aside>
+
+      <main id="main-content" class="w-3/4 p-4">
+        <header class="mt-28 ml-12">
+          <h1 class="text-4xl">Hello!</h1>
+          <p class="text-2xl mt-8 mb-4">I'm João Pedro Arouca (takaxo) </p>
+          <p class="text-2xl mb-4">I'm a linux software and web developer, recently I've worked as a .NET web developer, DB architect and engineer </p>
+          <p class="text-2xl">I'm intersted in: GNU/Linux, game development and game hacking and out of field: history, korean language and league of legends.</p>
+        </header>
+
+      </main>
+    </div>
+
+  </body>
+</html>
+
